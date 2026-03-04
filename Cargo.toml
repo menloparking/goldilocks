@@ -1,0 +1,17 @@
+[package]
+name = "goldilocks"
+version = "0.1.0"
+edition = "2021"
+description = "A Ruby code beautifier built on Prism that reformats and rewraps to fit within 100 columns"
+license = "MIT"
+
+[dependencies]
+ruby-prism = "1.9.0"
+
+[[bin]]
+name = "goldilocks"
+path = "src/main.rs"
+
+[lib]
+name = "goldilocks"
+path = "src/lib.rs"
